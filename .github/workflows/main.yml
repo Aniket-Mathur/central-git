@@ -5,6 +5,7 @@ on:
     branches:
       - master
   pull_request:
+    branches:
       - master
 
 jobs:
@@ -34,3 +35,4 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "build/"
           target: "/var/www/build"
+
